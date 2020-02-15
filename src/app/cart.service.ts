@@ -26,6 +26,12 @@ export class CartService {
     return this.items
   }
 
+  deleteItem(item) {
+    let index = this.items.indexOf(item)
+    this.items.splice(index, 1)
+    return this.items
+  }
+
   getShippingPrices(){
     return this.http.get('/assets/shipping.json')
   }
