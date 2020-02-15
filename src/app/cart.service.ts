@@ -26,8 +26,7 @@ export class CartService {
     return this.items
   }
 
-  deleteItem(item) {
-    let index = this.items.indexOf(item)
+  deleteItem(index) {
     this.items.splice(index, 1)
     return this.items
   }

@@ -37,8 +37,8 @@ export class CartComponent implements OnInit {
     customerData)
   }
 
-  removeItem(item) {
-    this.cartService.deleteItem(item)
+  removeItem(index) {
+    this.cartService.deleteItem(index)
     window.alert('Your product has been removed from cart!')
   }
 }
